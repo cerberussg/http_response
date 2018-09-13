@@ -4,7 +4,7 @@ Simple script at this point, provide an http address in the format required and 
 
 ## Features:
 
--[x] Submit HTTP address, receive HTTP response code back
--[ ] Accept HTTP & HTTPS
--[ ] Error checking and rescue
--[ ] Accept flat file of HTTP addresses
+- [x] Submit HTTP address, receive HTTP response code back
+- [ ] Accept HTTP & HTTPS
+- [ ] Error checking and rescue
+- [ ] Accept flat file of HTTP addresses
