@@ -11,15 +11,20 @@
 
 require 'net/http'
 
-def http_response_code(host)
-  address = URI.parse(host)
-  request = Net::HTTP::Get.new(address.to_s)
-  response = Net::HTTP.start(address.host, address.port) {|http|
-    http.request(request)
-  }
-  response.code
+class ResponseCode
+
+  def http_response_code(host)
+    address = URI.parse(host)
+    request = Net::HTTP::Get.new(address.to_s)
+    response = Net::HTTP.start(address.host, address.port) {|http|
+      http.request(request)
+    }
+    response.code
+  end
 end
 
+
+@code = ResponseCode.new
 puts 'Enter A website to return its HTTP code (sample format: http://google.com)'
 http_host = gets.chomp
-puts http_response_code(http_host)
+puts @code.http_response_code(http_host)
