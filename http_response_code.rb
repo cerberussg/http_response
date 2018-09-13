@@ -2,6 +2,7 @@
 #
 # Scott Goyette
 # 2018-09-11
+# scott_goyette@comcast.com, scott.goyette@rubypythmore.com
 # HTTP Response
 # Sends HTTP request returns HTTP code
 # Implementation use case:
