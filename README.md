@@ -1,4 +1,4 @@
-# HTTP Response Code
+# HTTP Response
 
 Simple script at this point, provide an http address in the format required and receive the http resposne code. Currently no rescue or error trappings, you send something other than an http address in format: http://google.com you will error out. Rough draft status, use at own risks.
 
